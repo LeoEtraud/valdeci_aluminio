@@ -199,7 +199,7 @@ export default function Home() {
               </a>
 
               {/* Desktop: apenas exibe o número */}
-              <div className="hidden sm:flex items-center border-2 border-white text-slate-400 hover:text-white px-8 py-2 rounded-full text-lg font-semibold">
+              <div className="hidden sm:flex items-center border-2 border-white text-slate-400 hover:text-white-800 px-8 py-2 rounded-full text-lg font-semibold">
                 <Phone className="mr-2 h-5 w-5" />
                 (98) 98438-6469
               </div>
@@ -1010,6 +1010,7 @@ export default function Home() {
 
       {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
+        {" "}
         <a
           href="https://wa.me/5598984633834?text=Olá!%20Gostaria%20de%20um%20orçamento."
           target="_blank"
@@ -1021,7 +1022,7 @@ export default function Home() {
           >
             <MessageCircle className="h-8 w-8" />
           </Button>
-        </a>
+        </a>{" "}
       </div>
     </div>
   );
