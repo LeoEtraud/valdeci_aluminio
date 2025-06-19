@@ -147,7 +147,7 @@ export default function Home() {
             <div className="flex items-center space-x-4">
               <div className="hidden lg:flex items-center text-sm text-gray-600">
                 <Phone className="h-4 w-4 text-glass-blue mr-2" />
-                <span>(98) 98438-6469</span>
+                <span>(98) 98463-3834</span>
               </div>
             </div>
           </div>
@@ -201,7 +201,7 @@ export default function Home() {
               {/* Desktop: apenas exibe o número */}
               <div className="hidden sm:flex items-center border-2 border-white text-slate-400 hover:text-white-800 px-8 py-2 rounded-full text-lg font-semibold">
                 <Phone className="mr-2 h-5 w-5" />
-                (98) 98438-6469
+                (98) 98463-3834
               </div>
             </div>
           </div>
