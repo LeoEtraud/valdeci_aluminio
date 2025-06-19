@@ -188,7 +188,7 @@ export default function Home() {
               </Button>
 
               {/* Mobile: botão de ligação */}
-              <a href="tel:98984386469" className="block sm:hidden w-full">
+              <a href="tel:98984633834" className="block sm:hidden w-full">
                 <Button
                   variant="outline"
                   className="border-2 border-white text-slate-400 hover:bg-white hover:text-slate-800 px-8 py-4 rounded-full text-lg font-semibold transition-all w-full"
