@@ -18,7 +18,6 @@ import {
   Phone,
   Mail,
   MapPin,
-  Clock,
   Star,
   Shield,
   Users,
@@ -161,8 +160,7 @@ export default function Home() {
         <div
           className="absolute inset-0 bg-cover bg-center"
           style={{
-            backgroundImage:
-              "url('https://images.unsplash.com/photo-1558618666-fcd25c85cd64?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1920&h=1080')",
+            backgroundImage: "url('/assets/page.png')",
           }}
         />
 
@@ -188,13 +186,23 @@ export default function Home() {
                 <Calculator className="mr-2 h-5 w-5" />
                 Solicitar Orçamento Grátis
               </Button>
-              <Button
-                variant="outline"
-                className="border-2 border-white text-slate-400 hover:bg-white hover:text-slate-800 px-8 py-4 rounded-full text-lg font-semibold transition-all"
-              >
+
+              {/* Mobile: botão de ligação */}
+              <a href="tel:98984386469" className="block sm:hidden w-full">
+                <Button
+                  variant="outline"
+                  className="border-2 border-white text-slate-400 hover:bg-white hover:text-slate-800 px-8 py-4 rounded-full text-lg font-semibold transition-all w-full"
+                >
+                  <Phone className="mr-2 h-5 w-5" />
+                  Ligar Agora
+                </Button>
+              </a>
+
+              {/* Desktop: apenas exibe o número */}
+              <div className="hidden sm:flex items-center border-2 border-white text-slate-400 hover:text-white px-8 py-2 rounded-full text-lg font-semibold">
                 <Phone className="mr-2 h-5 w-5" />
-                Ligar Agora
-              </Button>
+                (98) 98438-6469
+              </div>
             </div>
           </div>
         </div>
@@ -232,14 +240,14 @@ export default function Home() {
                   </h3>
                 </div>
                 <img
-                  src="https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
+                  src="../assets/portao03.jpeg"
                   alt="Portão automatizado residencial"
                   className="w-full h-48 object-cover rounded-xl mb-6 group-hover:scale-105 transition-transform"
                 />
                 <ul className="space-y-3 text-gray-700">
                   <li className="flex items-center">
                     <Check className="text-glass-blue mr-3 h-5 w-5" />
-                    Controle remoto e app mobile
+                    Controle remoto
                   </li>
                   <li className="flex items-center">
                     <Check className="text-glass-blue mr-3 h-5 w-5" />
@@ -269,7 +277,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <img
-                  src="https://images.unsplash.com/photo-1586023492125-27b2c045efd7?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
+                  src="../assets/porta01.jpeg"
                   alt="Porta de alumínio moderna"
                   className="w-full h-48 object-cover rounded-xl mb-6 group-hover:scale-105 transition-transform"
                 />
@@ -306,7 +314,7 @@ export default function Home() {
                   </h3>
                 </div>
                 <img
-                  src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=400"
+                  src="../assets/janela01.jpeg"
                   alt="Instalação profissional de vidros"
                   className="w-full h-48 object-cover rounded-xl mb-6 group-hover:scale-105 transition-transform"
                 />
@@ -378,43 +386,36 @@ export default function Home() {
             {/* Project Cards */}
             {[
               {
-                image:
-                  "https://images.unsplash.com/photo-1572120360610-d971b9d7767c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/portao03.jpeg",
                 title: "Portão Residencial Automatizado",
-                description:
-                  "Sistema completo com controle remoto e sensor de segurança",
+                description: "Sistema completo com controle remoto",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1497366811353-6870744d04b2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/portao04.jpeg",
                 title: "Fachada Comercial",
                 description:
                   "Portas de alumínio com vidro temperado para estabelecimento comercial",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1449824913935-59a10b8d2000?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/corrimao.jpeg",
                 title: "Envidraçamento de Sacada",
                 description:
                   "Vidro temperado com perfis de alumínio para maior segurança",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1504328345606-18bbc8c9d7d1?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/serralheria2.png",
                 title: "Estrutura Personalizada",
                 description:
                   "Projeto sob medida com acabamento de alta qualidade",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1564013799919-ab600027ffc6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/portao05.jpeg",
                 title: "Portão Industrial",
                 description:
                   "Sistema automatizado para uso comercial intensivo",
               },
               {
-                image:
-                  "https://images.unsplash.com/photo-1560448204-e02f11c3d0e2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=600",
+                image: "../assets/box01.jpeg",
                 title: "Box de Vidro Premium",
                 description:
                   "Instalação residencial com vidro temperado e ferragens especiais",
@@ -525,7 +526,7 @@ export default function Home() {
 
             <div className="space-y-6">
               <img
-                src="https://images.unsplash.com/photo-1581094794329-c8112a89af12?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=800&h=500"
+                src="../assets/projeto.png"
                 alt="Metalúrgico especializado trabalhando com peças de alumínio"
                 className="w-full rounded-2xl shadow-xl"
               />
@@ -682,7 +683,7 @@ export default function Home() {
                         onChange={(e) =>
                           setFormData({ ...formData, phone: e.target.value })
                         }
-                        placeholder="(11) 99999-9999"
+                        placeholder="(98) 99999-9999"
                         className="rounded-xl"
                         required
                       />
@@ -829,7 +830,7 @@ export default function Home() {
                         E-mail
                       </h4>
                       <p className="text-gray-600">
-                        contato@Valdeci Alumínio.com.br
+                        valdeci.aluminio.oficial@gmail.com
                       </p>
                     </div>
                   </div>
@@ -922,6 +923,7 @@ export default function Home() {
                 <Button
                   size="icon"
                   className="bg-primary rounded-full hover:bg-blue-600"
+                  onClick={() => {}}
                 >
                   <Instagram className="h-5 w-5" />
                 </Button>
@@ -975,7 +977,7 @@ export default function Home() {
                 </div>
                 <div className="flex items-center">
                   <Mail className="w-4 h-4 mr-2 text-glass-blue" />
-                  <span>contato@valdeci.com.br</span>
+                  <span>valdeci.aluminio.oficial@gmail.com</span>
                 </div>
                 <div className="flex items-start">
                   <MapPin className="w-4 h-4 mr-2 text-glass-blue mt-1" />
@@ -1008,12 +1010,18 @@ export default function Home() {
 
       {/* Floating WhatsApp Button */}
       <div className="fixed bottom-6 right-6 z-50">
-        <Button
-          size="icon"
-          className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg transition-all transform hover:scale-110"
+        <a
+          href="https://wa.me/5598984633834?text=Olá!%20Gostaria%20de%20um%20orçamento."
+          target="_blank"
+          rel="noopener noreferrer"
         >
-          <MessageCircle className="h-8 w-8" />
-        </Button>
+          <Button
+            size="icon"
+            className="bg-green-500 hover:bg-green-600 text-white w-14 h-14 rounded-full shadow-lg transition-all transform hover:scale-110"
+          >
+            <MessageCircle className="h-8 w-8" />
+          </Button>
+        </a>
       </div>
     </div>
   );
