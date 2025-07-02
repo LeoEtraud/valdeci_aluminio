@@ -811,13 +811,9 @@ export default function Home() {
                     </div>
                     <div>
                       <h4 className="font-semibold text-slate-800 mb-1">
-                        Telefones
+                        Telefone
                       </h4>
-                      <p className="text-gray-600">
-                        (98) 98463-3834
-                        <br />
-                        (98) 99611-7115
-                      </p>
+                      <p className="text-gray-600">(98) 99611-7115</p>
                     </div>
                   </div>
 
@@ -923,22 +919,33 @@ export default function Home() {
                 <Button
                   size="icon"
                   className="bg-primary rounded-full hover:bg-blue-600"
-                  onClick={() => {}}
+                  onClick={() => {
+                    window.open(
+                      "https://www.instagram.com/valdeci_aluminio?igsh=MWx5MmgwMWp0cTExMA==",
+                      "_blank"
+                    );
+                  }}
                 >
                   <Instagram className="h-5 w-5" />
                 </Button>
                 <Button
                   size="icon"
                   className="bg-primary rounded-full hover:bg-blue-600"
+                  onClick={() => {
+                    window.open(
+                      "https://wa.me/5598984633834?text=Olá!%20Gostaria%20de%20um%20orçamento.",
+                      "_blank"
+                    );
+                  }}
                 >
                   <MessageCircle className="h-5 w-5" />
                 </Button>
-                <Button
+                {/* <Button
                   size="icon"
                   className="bg-primary rounded-full hover:bg-blue-600"
                 >
                   <Linkedin className="h-5 w-5" />
-                </Button>
+                </Button> */}
               </div>
             </div>
 
