@@ -664,7 +664,7 @@ export default function Home() {
                       </Label>
                       <Input
                         id="name"
-                        name="name"
+                        name="Nome Cliente"
                         type="text"
                         value={formData.name}
                         onChange={(e) =>
@@ -684,7 +684,7 @@ export default function Home() {
                       </Label>
                       <Input
                         id="phone"
-                        name="phone"
+                        name="Telefone Cliente"
                         type="tel"
                         value={formData.phone}
                         onChange={(e) =>
@@ -706,7 +706,7 @@ export default function Home() {
                     </Label>
                     <Input
                       id="email"
-                      name="email"
+                      name="E-mail Cliente"
                       type="email"
                       value={formData.email}
                       onChange={(e) =>
@@ -726,7 +726,7 @@ export default function Home() {
                       Tipo de Serviço *
                     </Label>
                     <Select
-                      name="serviceType"
+                      name="Tipo de Serviço"
                       value={formData.serviceType}
                       onValueChange={(value) =>
                         setFormData({ ...formData, serviceType: value })
@@ -759,7 +759,7 @@ export default function Home() {
                     </Label>
                     <Textarea
                       id="description"
-                      name="description"
+                      name="Descrição do Projeto"
                       value={formData.description}
                       onChange={(e) =>
                         setFormData({
