@@ -648,7 +648,12 @@ export default function Home() {
                 <h3 className="text-2xl font-bold text-slate-800 mb-6">
                   Solicite seu Orçamento
                 </h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  // onSubmit={handleSubmit}
+                  action="https://formsubmit.co/valdeci.aluminio.oficial@gmail.com"
+                  method="POST"
+                  className="space-y-6"
+                >
                   <div className="grid md:grid-cols-2 gap-6">
                     <div>
                       <Label
