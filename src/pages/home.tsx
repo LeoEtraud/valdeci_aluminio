@@ -674,6 +674,21 @@ export default function Home() {
                         className="rounded-xl"
                         required
                       />
+                      <input
+                        type="hidden"
+                        name="_captcha"
+                        value="false"
+                      ></input>
+                      <input
+                        type="hidden"
+                        name="_autoresponse"
+                        value="Recebemos o seu E-mail e entraremos em contato em breve com seu orçamento."
+                      ></input>
+                      <input
+                        type="hidden"
+                        name="_next"
+                        value="https://valdecialuminio.vercel.app/thanks.html"
+                      ></input>
                     </div>
                     <div>
                       <Label
