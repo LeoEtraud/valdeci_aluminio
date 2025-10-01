@@ -687,7 +687,7 @@ export default function Home() {
                       <input
                         type="hidden"
                         name="_next"
-                        value="https://valdecialuminio.vercel.app/thanks.html"
+                        value="https://valdecialuminio.vercel.app/success"
                       ></input>
                     </div>
                     <div>
